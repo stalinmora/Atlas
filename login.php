@@ -22,6 +22,6 @@
         header("Location: principal.php");
     }else{
         echo 'El email o password es incorrecto, <a href="index.html">vuelva a intenarlo</a>.<br/>';
-  }
+    }
  
 ?>
