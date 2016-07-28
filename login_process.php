@@ -8,10 +8,11 @@
 
 session_start();
 require_once './Conexion.php';
-$obj = new Conexion();
+
 
 if(isset($_POST['btn-login']))
 {
+    $obj = new Conexion();
     echo "PRUEBA DESDE LOGIN_PROCESS";
     $user = $_POST['username'];
     $password = $_POST['password'];

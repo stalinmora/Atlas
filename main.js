@@ -1,4 +1,9 @@
-$('document').ready(function(){
+/*
+Author: Stalin Mora
+*/
+
+$(document).ready(function()
+{
     
     $("#login-form").validate({
         rules:
@@ -10,17 +15,9 @@ $('document').ready(function(){
                         required: true,
                     },
                 },
-                messages:
-                    {
-                        password:{
-                            required: "Por favor ingrese su PASSWORD"
-                        },
-                            username: "Ingrese su usuario",
-                        },
                submitHandler: submitForm
                 
     });
-    
     function submitForm(){
         var data = $("#login-form").serialize();
         
@@ -38,7 +35,7 @@ $('document').ready(function(){
                 if(response=="ok")
                 {        
                     $("#btn-login").html('<img src="btn-ajax-loader.gif" /> &nbsp; Signing In ...');
-                    setTimeout(' window.location.href = "principal.php"; ',4000);
+                    setTimeout('window.location.href = "principal.php"; ',4000);
                 }
                 else
                 {
