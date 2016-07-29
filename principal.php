@@ -90,7 +90,7 @@
                                 <li><a href="#">Something else here</a></li>
 
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Cambiar Clave</a></li>
+                                <li><a href="update_user.php">Cambiar Clave</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="cerrar-sesion.php">Cerrar Sesion</a></li>
                             </ul>

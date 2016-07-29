@@ -20,8 +20,13 @@
     // Redirecciono al usuario a la página principal del sitio.
         header("HTTP/1.1 302 Moved Temporarily");
         header("Location: principal.php");
+    }elseif($row[0] == "3"){
+        $_SESSION['user'] = $user;
+    // Redirecciono al usuario a la página actualizacion de clave.
+        header("HTTP/1.1 302 Moved Temporarily");
+        header("Location: update_user.php");
     }else{
-        echo 'El email o password es incorrecto, <a href="index.html">vuelva a intenarlo</a>.<br/>';
+        echo 'El usuario o password es incorrecto, <a href="index.html">vuelva a intenarlo</a>.<br/>';
     }
  
 ?>
